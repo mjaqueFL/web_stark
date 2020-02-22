@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap%27');
+
+html
+{
+	font-family: nunito;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+header
+{
+	font-size: 35px;
+	background-color: #172645;
+}
+
+header>nav
+{
+	display: flex;
+}
+
+header>nav>a
+{
+	flex-grow: 1;
+	padding: 0.5em 0;
+	color: white;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+
+header>nav>a:hover
+{
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.3em;
+}
+
+main
+{
+	background-color: #7a9dec;
+	min-height: 35em;
+}
+
+footer
+{
+	background-color: #365498;
+	overflow: hidden;
+}
+
+footer #otrasCasas
+{
+	float: left;
+	width: 50%;
+}
+
+footer #otrasCasas img
+{
+	display: inline-block;
+	width: 10%;
+	border: 1px solid #020203;
+	margin: 1em 3%;
+}
+
+footer #legal
+{
+	width: 50%;
+	float: right;
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer #legal a
+{
+	flex-basis: 50%;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+footer #legal a:hover
+{
+	color: #7a9dec;
+}
+
+@media only screen and (max-width: 800px)
+{
+	header>nav
+	{
+		flex-wrap: wrap;
+	}
+	
+	header>nav>a
+	{
+		flex-basis: 100%;
+		transition-duration: 0.4s;
+	}
+	
+	header>nav>a:hover
+	{
+		border-bottom: 0;
+		padding-bottom: 0.5em;
+		background-color: black;
+	}
+	
+	footer #otrasCasas, footer #legal
+	{
+		float: none;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+	
+	footer #otrasCasas img
+	{
+		width: 30%;
+		height: 5em;
+	}
+	
+	footer #legal
+	{
+		float: none;
+		display: block;
+	}
+
+	footer #legal a
+	{
+		display: block;
+	}
+}

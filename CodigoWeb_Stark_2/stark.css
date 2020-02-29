@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap%27');
+
+html
+{
+	font-family: nunito;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/* ======================================================== header ======================================================== */
+
+header
+{
+	font-size: 35px;
+	background-color: #172645;
+}
+
+header>h1
+{
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+header>nav
+{
+	display: flex;
+}
+
+header>nav>a
+{
+	flex-grow: 1;
+	padding: 0.5em 0;
+	color: white;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+
+header>nav>a:hover
+{
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.3em;
+}
+
+/* ======================================================== main ======================================================== */
+
+main
+{
+	background-color: #ebf2fc;
+	min-height: 35em;
+	padding: 1em 5%;
+	text-align: justify;
+}
+
+main#inicio
+{
+	background-image: URL("src/img/fondoStark.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+main.legal>a
+{
+	color: black;
+	display: block;
+	background-color: #172645;
+	color: white;
+	padding: 0.3em 1%;
+	width: 5%;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	margin-top: 1em;
+	transition-duration: 0.3s;
+}
+
+main.legal>a:hover
+{
+	background-color: #ebf2fc;
+	color: black;
+	border-color: black;
+	
+}
+
+main.legal>p, main.legal>h3, main.legal>h4
+{
+	margin: 1em 0;
+}
+
+main.legal>ol li
+{
+	margin-bottom: 1em;
+}
+
+main.legal>ol ol
+{
+	list-style-type: lower-latin;
+}
+
+main.legal>ol span.negrita
+{
+	font-weight: bold;
+}
+
+main.legal>table td, main.legal>table th
+{
+	border: 1px solid black;
+	padding: 0.5em 1%;
+	text-align: center;
+}
+
+main.legal>table
+{
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 3em;
+	width: 90%;
+	
+}
+
+main.legal>p>a:hover
+{
+	text-decoration: underline;
+}
+
+/* ======================================================== footer ======================================================== */
+
+footer
+{
+	background-color: #365498;
+	overflow: hidden;
+}
+
+footer #otrasCasas
+{
+	float: left;
+	width: 50%;
+}
+
+footer #otrasCasas img
+{
+	display: inline-block;
+	width: 10%;
+	border: 1px solid #020203;
+	margin: 1em 3%;
+}
+
+footer #legal
+{
+	width: 50%;
+	float: right;
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer #legal a
+{
+	flex-basis: 50%;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+footer #legal a:hover
+{
+	color: #7a9dec;
+}
+
+@media only screen and (max-width: 800px)
+{
+	header>nav
+	{
+		flex-wrap: wrap;
+		font-size: 15px;
+	}
+	
+	header>nav>a
+	{
+		flex-basis: 100%;
+		transition-duration: 0.4s;
+	}
+	
+	header>nav>a:hover
+	{
+		border-bottom: 0;
+		padding-bottom: 0.5em;
+		background-color: black;
+	}
+	
+	main#inicio
+	{
+		background-image: URL("src/img/fondoStarkMovil.jfif");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	footer #otrasCasas, footer #legal
+	{
+		float: none;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+	
+	footer #otrasCasas img
+	{
+		width: 30%;
+		height: 5em;
+	}
+	
+	footer #legal
+	{
+		float: none;
+		display: block;
+	}
+
+	footer #legal a
+	{
+		display: block;
+	}
+}

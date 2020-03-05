@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Registro</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<link rel="stylesheet" href="stark.css"/>
+		<script src="stark.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="historia.html">HISTORIA</a>
+				<a href="personajes.html">PERSONAJES</a>
+				<a href="registro.html">REGISTRO</a>
+			</nav>
+			<button onclick="menu()" id="botonMenu"></button>
+		</header>
+		<main id="registro">
+			<div id="modalPanel">
+				<div id="contenidoModal">
+					<button id="cerrarModal">x</button>
+					<h3>Lacayo: gratis:</h3>
+					<p>
+						Dispondrá de notificaciones al correo proporcionado de las nuevas actualizaciones, por lo que no tendrá que proporcionar la cuenta bancarias
+					</p>
+					<hr/>
+					<h3>Principe: 10.00€/mes:</h3>
+					<p>
+						Videos exclusivos,  aparte de las características disponibles para la versión anterior.
+					</p>
+					<hr/>
+					<h2>Rey del Norte: 25.00€/mes:</h2>
+					<p>
+						Le enviaremos merchandisng y generar comentarios/publicaciones, aparte de las características disponibles para las versiones anteriores.
+					</p>
+				</div>
+			</div>
+			<form>
+				<input type="text" placeholder="Nombre Usuario" aria-label="Nombre Usuario" size="100" title="Nombre de Usuario"/>
+				<input type="text" placeholder="Nombre y Apellidos" size="100" title="Nombre y Apellidos"/>
+				<input type="text" placeholder="Número de la Cuenta Bancaria" size="16" title="Número de la Cuenta Bancaria"/>
+				<input type="text" placeholder="Correo Electrónico" size="100" title="Correo electrónicos"/>
+				<fieldset>
+					<legend>Membresía:</legend>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Lacayo"/><span>Lacayo</span>
+					</div>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Principe"/><span>Príncipe</span>
+					</div>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Rey del Norte"/><span>Rey del Norte</span>
+					</div>
+				</fieldset>
+				<div id="botonPago">Información de pago</div>
+				<div id="checkbox">
+					<button id="botonRegistro"  disabled="disabled">Registrate</button>
+					<input type="checkbox" onchange="comprobar(this)" name="aceptarTerminos" title="Aceptar Política de Privacidad">
+					<label for="aceptarTerminos">Acepto la política de privacidad. <a href="Privacidad.html">Leer más.</a></label>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<div id="otrasCasas">
+				<a href="#"><img src="src/img/lannister.png" alt="Escudo de la familia Lanister"/></a><!--URL casa lannister-->
+				<a href="#"><img src="src/img/targaryen.png" alt="Escudo de la familia Targaryen"/></a><!--URL casa targarian-->
+			</div>
+			<div id="legal">
+				<a href="avisoLegal.html">Aviso Legal</a>
+				<a href="privacidad.html">Política de privacidad</a>
+				<a href="cookies.html">Política de cookies</a>
+				<a href="terminos.html">Términos y condiciones</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap%27');
+
+@font-face
+{
+    font-family: 'got';
+    src: url('src/fuentes/GOT.ttf');
+}
+
+html
+{
+	font-family: nunito;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/* ======================================================== header ======================================================== */
+
+header
+{
+	font-size: 35px;
+	background-color: #172645;
+}
+
+header>h3
+{
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 75px;
+}
+
+header>nav
+{
+	display: flex;
+	transition-duration: 0.5s;
+	overflow: hidden;
+}
+
+header>nav>a
+{
+	flex-grow: 1;
+	padding: 0.5em 0;
+	color: white;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+
+#botonMenu
+{
+	display: none;
+	margin: 10px;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	background-image: url(src/img/imagenBoton.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	transition-duration: 0.4s;
+}
+
+#botonMenu:active
+{
+	opacity: 1;
+}
+
+header>nav>a:hover, header>nav>a:focus
+{
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.3em;
+}
+
+/* ======================================================== main ======================================================== */
+
+main
+{
+	background-color: #ebf2fc;
+	min-height: 35em;
+	padding: 1em 5%;
+}
+
+main.legal
+{
+	text-align: justify;
+}
+
+main#inicio
+{
+	padding-left: 3%;
+	background-image: URL("src/img/fondoStark.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+main#inicio #frase
+{
+	min-height: 36em;
+	padding:1em 0 0;
+	width: 28%;
+	font-family: got;
+	text-align: center;
+	word-spacing: 10px;
+	color: #ebf2fc;
+}
+
+main#inicio #frase>h3
+{
+	line-height: 1.8em;
+	font-size: 1.05em;
+}
+
+main#inicio #frase>h4
+{
+	margin-bottom: 4em;
+	text-decoration: underline;
+}
+
+main#inicio #frase>h4:last-child
+{
+	margin-bottom: 0;
+}
+
+main.legal>a, button, #botonPago /* botones de registro y botón de volver */
+{
+	color: black;
+	display: block;
+	background-color: #172645;
+	color: white;
+	padding: 0.3em 1%;
+	width: 6%;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	margin-top: 1em;
+	transition-duration: 0.3s;
+}
+
+button, #botonPago
+{
+	display: inline-block;
+	cursor: pointer;
+}
+
+main.legal>a:hover, #botonRegistro:hover, #botonPago:hover, main#registro #modalPanel button:hover, main.legal>a:focus, #botonRegistro:focus, #botonPago:focus, main#registro #modalPanel button:focus
+{
+	background-color: #ebf2fc;
+	color: black;
+	border-color: black;
+	
+}
+
+main.legal>p, main.legal>h3, main.legal>h4
+{
+	margin: 1em 0;
+}
+
+main.legal>ol li
+{
+	margin-bottom: 1em;
+}
+
+main.legal>ol ol
+{
+	list-style-type: lower-latin;
+}
+
+main.legal>ol span.negrita
+{
+	font-weight: bold;
+}
+
+main.legal>table td, main.legal>table th
+{
+	border: 1px solid black;
+	padding: 0.5em 1%;
+	text-align: center;
+}
+
+main.legal>table
+{
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 3em;
+	width: 90%;
+}
+
+main.legal>p>a:hover, main.legal>p>a:focus
+{
+	text-decoration: underline;
+}
+
+main#registro
+{
+	padding-top: 3em;
+	min-height: 30em;
+}
+
+main#registro #modalPanel
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5em 20%;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	transition-duration: 1s;
+	background-color: rgb(0,0,0,0.4);
+}
+
+main#registro #modalPanel #contenidoModal
+{
+	padding: 1em 2%;
+	border-radius: 10px;
+	border: 1px solid gray;
+	background-color: white;
+	width: 60%;
+}
+
+main#registro #modalPanel #contenidoModal button
+{
+	position: absolute;
+	top: 7em;
+	right: 42%;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+}
+
+main#registro #modalPanel #contenidoModal>h3, main#registro #modalPanel #contenidoModal>h2
+{
+	margin-bottom: 0;
+}
+
+main#registro #modalPanel #contenidoModal>p
+{
+	margin-top: 0.3em;
+	margin-bottom: 2em;
+}
+
+main#registro>form>h3
+{
+	margin-left: 5%;
+}
+
+main#registro form fieldset
+{
+	border: none;
+	margin-left: 0;
+}
+
+main#registro form legend
+{
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+form input[type="text"]
+{
+	display:inline-block;
+	margin:2em 5%;
+	width:35%;
+	padding: 0.5em 0;
+	border: 1px solid #365498;
+	border-radius: 5px;
+	filter: brightness(0.9);
+	font-size: 1em;
+	transition-duration: 0.3s;
+}
+
+input[type="text"]:focus
+{
+	width: 39%;
+	filter: brightness(1);
+	padding-left: 1%;
+	margin-right: 0;
+}
+
+main#registro .radio
+{
+	margin:1em 5%;
+}
+
+main#registro #botonPago
+{
+	width: auto;
+	margin:1em 5%;
+	padding: 0.5em 3%;
+	border-radius:4px;
+}
+
+main#registro #botonRegistro
+{
+	margin:1em 0 1em 20%;
+	width: auto;
+	padding: 0.6em 4%;
+	font-size: 1.1em;
+	border-radius:4px;
+}
+
+main#registro #botonRegistro:disabled
+{
+	background-color: #560404;
+	border-color: transparent;
+	color: white;
+}
+
+main#registro #checkbox
+{
+	display:inline-block;
+	width: 60%;
+}
+
+input[type="checkbox"]+label>a:hover, input[type="checkbox"]+label>a:focus
+{
+	text-decoration: underline;
+}
+
+input[type="text"]:focus, a:focus, button:focus #botonPago:focus /* quitar el borde azul que sale cuando haces focus en un elemento */
+{
+    outline:none;
+}
+
+/* ======================================================== footer ======================================================== */
+
+footer
+{
+	background-color: #365498;
+	overflow: hidden;
+}
+
+footer #otrasCasas
+{
+	float: left;
+	width: 50%;
+}
+
+footer #otrasCasas img
+{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 1em 4%;
+	transition-duration: 0.3s;
+}
+
+footer #otrasCasas a
+{
+	display: inline-block;
+	width: 10%;
+	padding: 0 5%;
+}
+
+footer #otrasCasas img:hover, footer #otrasCasas a:focus
+{
+	filter: brightness(1.3);
+}
+
+footer #legal
+{
+	width: 50%;
+	float: right;
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer #legal a
+{
+	flex-basis: 50%;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+footer #legal a:hover, footer #legal a:focus
+{
+	color: #7a9dec;
+}
+
+/* _____________________________________________ Medias query _____________________________________________ */
+
+@media only screen and (max-width: 1200px)
+{
+	main#inicio #frase
+	{
+		display: none;
+	}
+	
+	main#registro #botonRegistro
+	{
+		margin: 0;
+	}
+	
+	main#registro #checkbox
+	{
+		width: 65%;
+	}
+	
+	footer #otrasCasas a
+	{
+		width: 20%;
+	}
+	
+	main.legal>a
+	{
+		width: 9%;
+	}
+	
+	footer #legal
+	{
+		width: 60%;
+	}
+	
+	footer #otrasCasas
+	{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	header>nav
+	{
+		height: 0;
+		flex-wrap: wrap;
+		font-size: 20px;
+	}
+	
+	header>nav>a
+	{
+		flex-basis: 100%;
+		transition-duration: 0.4s;
+	}
+	
+	main#registro input[type="text"]
+	{
+		width:70%;
+		margin-bottom: 0;
+		transition-duration: 0.6s;
+	}
+	
+	main#registro input[type="text"]:last-of-type
+	{
+		margin-bottom: 2em;
+	}
+	
+	main#registro input[type="text"]:focus
+	{
+		width: 75%;
+		padding-left: 2%;
+	}
+	
+	main#registro #checkbox
+	{
+		width:80%;
+		display:block;
+		margin-top: 2em;
+		margin-left: 5%;
+	}
+
+	main#registro #botonregistro
+	{
+		margin:1em 5%;
+	}
+	
+	main#registro #modalPanel
+	{
+		padding: 5em 10%;
+	}
+
+	main#registro #modalPanel #contenidoModal
+	{
+		padding: 1em 2%;
+		width: 80%;
+	}
+	
+	main#registro #modalPanel #contenidoModal button
+	{
+		right: 24.5%;
+	}
+	
+	#botonMenu
+	{
+		display: inline-block;
+		float: right;
+	}
+	
+	header>nav>a:hover, header>nav>a:focus
+	{
+		border-bottom: 0;
+		padding-bottom: 0.5em;
+		background-color: black;
+	}
+	
+	main#inicio
+	{
+		background-image: URL("src/img/fondoStarkMovil.jfif");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	main.legal>a
+	{
+		width: 14%;
+	}
+	
+	footer #otrasCasas, footer #legal
+	{
+		float: none;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+	
+	footer #legal
+	{
+		float: none;
+		display: block;
+	}
+
+	footer #legal a
+	{
+		display: block;
+	}
+}

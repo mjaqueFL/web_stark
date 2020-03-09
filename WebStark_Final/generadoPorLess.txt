@@ -1,0 +1,9 @@
+La mayor parte del header y el footer usando jerarquías
+	-Líneas 40-65.
+	-Líneas 646-683.
+
+Colores principales usados como variables
+	-Líneas 43, 97, 126, 150, 169, 255, 262, 290, 376, 506, 608, 648, 692.
+
+Tamaño del contenido del aside de personajes usado como variable y usado como operación en las medias query
+	-Líneas 380, 738, 857.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Registro</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta name="description" content="Registro. Página para que los usuaios puedan tanto como registrarse como iniciar sesión, aparte de elegir la membresía que quieren optener."/>
+		<meta name="keywords" content="Stark, Juego de Tronos, GoT, Invernalia, Registro Stark, Ser un Stark, Unirse a Stark"/>
+		<link rel="stylesheet" href="stark.css"/>
+		<link rel="icon" href="src/img/iconoPestania.png">
+		<script src="src/JavaScript/stark.js"></script>
+		<script src="src/JavaScript/procesosCookies.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="historia.html">HISTORIA</a>
+				<a href="personajes.html">PERSONAJES</a>
+				<a href="registro.html">REGISTRO</a>
+			</nav>
+			<button onclick="menu()" id="botonMenu"></button>
+		</header>
+		<main id="registro">
+			<div id="modalPanel">
+				<div id="contenidoModal">
+					<button id="cerrarModal" onclick="cerrarModal()">x</button>
+					<h3>Lacayo: gratis:</h3>
+					<p>
+						Dispondrá de notificaciones al correo proporcionado de las nuevas actualizaciones, por lo que no tendrá que proporcionar la cuenta bancarias
+					</p>
+					<hr/>
+					<h3>Principe: 10.00€/mes:</h3>
+					<p>
+						Videos exclusivos,  aparte de las características disponibles para la versión anterior.
+					</p>
+					<hr/>
+					<h2>Rey del Norte: 25.00€/mes:</h2>
+					<p>
+						Le enviaremos merchandisng y generar comentarios/publicaciones, aparte de las características disponibles para las versiones anteriores.
+					</p>
+				</div>
+			</div>
+			<form action="registro.html" method="get">
+				<input type="text" placeholder="Nombre Usuario" aria-label="Nombre Usuario" size="100" title="Nombre de Usuario" required="required"/>
+				<input type="text" placeholder="Nombre y Apellidos" size="100" title="Nombre y Apellidos" required="required"/>
+				<input type="text" placeholder="Número de la Cuenta Bancaria" size="16" title="Número de la Cuenta Bancaria" required="required"/>
+				<input type="text" placeholder="Correo Electrónico" size="100" title="Correo electrónicos" required="required"/>
+				<fieldset>
+					<legend>Membresía:</legend>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Lacayo"/><span>Lacayo</span>
+					</div>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Principe"/><span>Príncipe</span>
+					</div>
+					<div class="radio">
+						<input type="radio" name="membresia" title="Rey del Norte"/><span>Rey del Norte</span>
+					</div>
+				</fieldset>
+				<div id="botonPago" onclick="informacionPago()" onkeypress="if(event.keyCode === 13){informacionPago()}" tabindex="0">Información de pago</div>
+				<div id="checkbox">
+					<input id="botonRegistro" disabled="disabled" type="submit" value="Regístrate"/>
+					<div>
+						<input type="checkbox" onchange="comprobar(this)" name="aceptarTerminos" title="Aceptar Política de Privacidad"/>
+						<label for="aceptarTerminos">Acepto la política de privacidad. <a href="Privacidad.html">Leer más.</a></label>
+					</div>
+				</div>
+			</form>
+			<div class="modalCookie" id="modalCookie">
+				<div class="contenidoModalCookie">
+					<div class="bodyCookie">
+						Esta web utiliza 'cookies' propias y de terceros para ofrecerle una mejor experiencia y servicio y 
+						poder registrar el proceso de compra. Para saber más sobre nuestra política de cookies o qué 
+						cookies utilizamos, puedes revisar la página de <a href="src/Legal/cookies.html">política de cookies</a>
+					</div>
+					<div class="footerCookie">
+						<button id="aceptarCookie">Aceptar</button>
+						<button id="cerrarCookie">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="otrasCasas">
+				<a href="http://2daw.esvirgua.com/14/final" title="http://2daw.esvirgua.com/14/final"><img src="src/img/lannister.png" alt="Escudo de la casa Lannister"/></a><!--URL casa lannister-->
+				<a href="http://2daw.esvirgua.com/09/final" title="http://2daw.esvirgua.com/09/final"><img src="src/img/targaryen.png" alt="Escudo de la casa Targaryen"/></a><!--URL casa targarian-->
+			</div>
+			<div id="legal">
+				<a href="src/Legal/avisoLegal.html">Aviso Legal</a>
+				<a href="src/Legal/privacidad.html">Política de privacidad</a>
+				<a href="src/Legal/cookies.html">Política de cookies</a>
+				<a href="src/Legal/terminos.html">Términos y condiciones</a>
+			</div>
+		</footer>
+	</body>
+</html>

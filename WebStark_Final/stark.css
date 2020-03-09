@@ -1,0 +1,1004 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap%27');
+
+/*
+LESS:
+	-Generados por jerarquía la mayor parte del footer y el header
+	-Colores principales usados como variables
+	-Tamaño del contenido del aside de personajes usado como variable y usado como operación en las medias query
+*/
+
+@font-face
+{
+	font-family: 'got';
+	src: url('src/fuentes/GOT.ttf');
+}
+
+html
+{
+	font-family: nunito;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+/* ======================================================== header ======================================================== */
+
+header
+{
+	font-size: 35px;
+	background-color: #172645;
+}
+
+header h3
+{
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 75px;
+}
+
+header nav
+{
+	display: flex;
+	overflow: hidden;
+	transition-duration: 0.4s;
+}
+
+header nav a
+{
+	flex-grow: 1;
+	padding: 0.5em 0;
+	color: white;
+	text-align: center;
+	transition-duration: 0.4s;
+}
+
+#botonMenu
+{
+	display: none;
+	margin: 10px;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	background-image: url(src/img/imagenBoton.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	transition-duration: 0.4s;
+}
+
+header > nav > a:hover,
+header > nav > a:focus
+{
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.3em;
+}
+
+/* ======================================================== main ======================================================== */
+
+main
+{
+	background-color: #ebf2fc;
+	min-height: 35em;
+	padding: 1em 0 1em 5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+main.legal
+{
+	text-align: justify;
+}
+
+/* Página de inicio */
+
+main#inicio,
+main#historia
+{
+	padding-left: 3%;
+	background-image: url("src/img/fondoStark.jpg");
+}
+
+main#inicio #frase
+{
+	min-height: 36em;
+	padding: 1em 0 0;
+	width: 28%;
+	font-family: got;
+	text-align: center;
+	word-spacing: 10px;
+	color: #ebf2fc;
+}
+
+main#inicio #frase > h3
+{
+	line-height: 1.8em;
+	font-size: 1.05em;
+}
+
+main#inicio #frase > h4
+{
+	margin-bottom: 4em;
+	text-decoration: underline;
+}
+
+main#inicio #frase > h4:last-child
+{
+	margin-bottom: 0;
+}
+
+main.legal > a,
+button,
+#botonPago,
+input[type="submit"]
+{
+	color: black;
+	display: block;
+	background-color: #172645;
+	color: white;
+	padding: 0.3em 1%;
+	width: 6%;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	margin-top: 1em;
+	transition-duration: 0.3s;
+}
+
+#botonPago
+{
+	display: inline-block;
+	cursor: pointer;
+}
+
+main.legal > a:hover,
+button:hover,
+#botonPago:hover,
+input[type="submit"]:hover,
+main.legal > a:focus,
+button:focus,
+#botonPago:focus,
+input[type="submit"]:focus
+{
+	background-color: #ebf2fc;
+	color: black;
+	border-color: black;
+}
+
+main.legal > p,
+main.legal > h3,
+main.legal > h4
+{
+	overflow: hidden;
+	width: 95%;
+	margin: 1em 0;
+}
+
+main.legal > ol li
+{
+	margin-bottom: 1em;
+}
+
+main.legal > ol ol
+{
+	list-style-type: lower-latin;
+}
+
+main.legal > ol > li
+{
+	margin-right: 5%;
+}
+
+main.legal > table td,
+main.legal > table th
+{
+	border: 1px solid black;
+	padding: 0.5em 1%;
+	text-align: center;
+}
+
+main.legal > table
+{
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 3em;
+	width: 90%;
+}
+
+main.legal > p > a:hover,
+main.legal > p > a:focus
+{
+	text-decoration: underline;
+}
+
+/* Página de historia */
+
+main#historia
+{
+	padding: 0;
+}
+
+main#historia #fondoOpacidad
+{
+	width: 94%;
+	min-height: 35em;
+	background-color: rgba(235, 242, 252, 0.6);
+	padding: 2em 3%;
+}
+
+main#historia #fondoOpacidad #contenido
+{
+	width: 90%;
+	min-height: 17em;
+	background-color: rgba(16, 26, 47, 0.74);
+	padding: 1em 5%;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+main#historia #fondoOpacidad #contenido div
+{
+	width: 100%;
+}
+
+main#historia #fondoOpacidad #contenido div.imgHistoria > img
+{
+	width: 100%;
+	height: auto;
+}
+
+main#historia #fondoOpacidad #contenido p
+{
+	color: #ebf2fc;
+	font-size: 1.4em;
+	text-align: justify;
+}
+
+main#historia #fondoOpacidad #contenido h2
+{
+	color: #ebf2fc;
+	font-size: 3em;
+	padding-left: 5%;
+}
+
+main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) div.imgHistoria
+{
+	margin-top: 0.5em;
+	width: 34%;
+	float: left;
+}
+
+main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) p
+{
+	float: left;
+	width: 60%;
+}
+
+main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) div.imgHistoria + p,
+main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) p + div.imgHistoria
+{
+	margin-left: 6%;
+	/* Separar las imágenes de los párrafos de texto en los div en los que hay una imagen al lado de un texto, se necesita así para que esté alineado */;
+}
+
+main#historia #fondoOpacidad #contenido div:nth-of-type(2n) p
+{
+	clear: both;
+	width: 95%;
+	color: #ebf2fc;
+}
+
+main#historia #fondoOpacidad #contenido hr
+{
+	background-color: white;
+}
+
+/* Página de personajes */
+
+main#personajes
+{
+	background-image: url("src/img/fondoPersonajes.jpg");
+	background-position: top;
+}
+
+main#personajes > div
+{
+	overflow: hidden;
+}
+
+main#personajes #gen1
+{
+	margin-left: 20%;
+	margin-bottom: 4em;
+}
+
+main#personajes #gen1 button
+{
+	width: 10%;
+	margin-left: 5%;
+}
+
+main#personajes #gen1 button:nth-child(3)
+{
+	margin-left: 45%;
+}
+
+main#personajes #gen2 button
+{
+	width: 9%;
+	margin-left: 2%;
+}
+
+main#personajes #gen2 button:first-child
+{
+	margin-left: 10px;
+	margin-right: 8%;
+}
+
+main#personajes > div > button
+{
+	float: left;
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	border-radius: 20px;
+	transition-duration: 0.4s;
+}
+
+main#personajes > div > button:hover,
+input[type="sumbit"]:hover,
+main#personajes > div > button:focus,
+input[type="submit"]:focus
+{
+	box-shadow: 0px 0px 10px white;
+	outline: none;
+}
+
+main#personajes button img
+{
+	width: 100%;
+	height: auto;
+}
+
+main#personajes aside
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100%;
+	width: 100%;
+}
+
+main#personajes aside .contenidoPersonaje
+{
+	background-color: #ebf2fc;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16%;
+	height: 100%;
+	padding: 0 2%;
+	text-align: justify;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 20px;
+	animation-name: deslizarPersonaje;
+	border-radius: 20px 0 0 20px;
+	animation-duration: 0.4s;
+}
+
+@keyframes deslizarPersonaje
+{
+	from
+	{
+		right: -25%;
+		opacity: 0;
+	}
+	to
+	{
+		right: 0;
+		opacity: 1;
+	}
+}
+
+main#personajes aside .contenidoPersonaje div.imgPersonaje
+{
+	width: 70%;
+	margin-top: 1em;
+}
+
+main#personajes aside .contenidoPersonaje h3
+{
+	font-size: 1.3em;
+}
+
+main#personajes aside .contenidoPersonaje div.imgPersonaje img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+}
+
+main#personajes aside button
+{
+	float: right;
+	width: 25px;
+	height: 25px;
+}
+
+/* Página de registro */
+
+main#registro
+{
+	padding-top: 3em;
+	min-height: 30em;
+}
+
+main#registro #modalPanel
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5em 20%;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	transition-duration: 1s;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+main#registro #modalPanel #contenidoModal
+{
+	padding: 1em 2%;
+	border-radius: 10px;
+	border: 1px solid gray;
+	background-color: white;
+	width: 60%;
+}
+
+main#registro #modalPanel #contenidoModal button
+{
+	position: absolute;
+	top: 7em;
+	right: 42%;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+}
+
+main#registro #modalPanel #contenidoModal > h3,
+main#registro #modalPanel #contenidoModal > h2
+{
+	margin-bottom: 0;
+}
+
+main#registro #modalPanel #contenidoModal > p
+{
+	margin-top: 0.3em;
+	margin-bottom: 2em;
+}
+
+main#registro > form > h3
+{
+	margin-left: 5%;
+}
+
+main#registro form fieldset
+{
+	border: none;
+	margin-left: 0;
+}
+
+main#registro form legend
+{
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+form input[type="text"]
+{
+	display: inline-block;
+	margin: 2em 5%;
+	width: 35%;
+	padding: 0.5em 0;
+	border: 1px solid #365498;
+	border-radius: 5px;
+	filter: brightness(0.9);
+	font-size: 1em;
+	transition-duration: 0.3s;
+}
+
+input[type="text"]:focus
+{
+	width: 39%;
+	filter: brightness(1);
+	padding-left: 1%;
+	margin-right: 0;
+}
+
+main#registro .radio
+{
+	margin: 1em 5%;
+}
+
+main#registro .radio span
+{
+	transition-duration: 0.3s;
+}
+
+main#registro .radio input:checked + span
+{
+	margin-left: 1%;
+	font-weight: bold;
+}
+
+main#registro #botonPago
+{
+	width: auto;
+	margin: 1em 5%;
+	padding: 0.5em 3%;
+	border-radius: 4px;
+}
+
+main#registro #botonRegistro
+{
+	display: inline-block;
+	margin: 1em 0 1em 20%;
+	width: auto;
+	padding: 0.6em 4%;
+	font-size: 1.1em;
+	border-radius: 4px;
+}
+
+main#registro #botonRegistro:disabled
+{
+	background-color: #560404;
+	border-color: transparent;
+	color: white;
+}
+
+main#registro #checkbox
+{
+	display: inline-block;
+	width: 60%;
+	margin-left: 0;
+}
+
+main#registro #checkbox div
+{
+	display: inline-block;
+}
+
+input[type="checkbox"] + label > a:hover,
+input[type="checkbox"] + label > a:focus,
+.bodyCookie > a:hover
+{
+	text-decoration: underline;
+}
+
+/* quitar el borde azul que sale cuando haces focus en un elemento */
+input[type="text"]:focus,
+a:focus,
+button:focus,
+#botonPago:focus
+{
+	outline: none;
+}
+
+/* Cookies */
+
+div.modalCookie
+{
+	display: none;
+	height: 10em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	opacity: 1;
+	animation-name: deslizar;
+	animation-duration: 0.5s;
+}
+
+.contenidoModalCookie
+{
+	height: 8em;
+	overflow: hidden;
+	width: 90%;
+	padding: 1em 5%;
+	background-color: #7a9dec;
+}
+
+.bodyCookie
+{
+	padding: 1em 5%;
+}
+
+.footerCookie
+{
+	position: absolute;
+	bottom: 1em;
+	right: 0;
+	width: 100%;
+}
+
+.footerCookie button
+{
+	float: right;
+	margin-right: 1%;
+}
+
+@keyframes deslizar
+{
+	from
+	{
+		bottom: -20em;
+		opacity: 0;
+	}
+	to
+	{
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+/* ======================================================== footer ======================================================== */
+
+footer
+{
+	background-color: #365498;
+	overflow: hidden;
+}
+
+footer #otrasCasas
+{
+	float: left;
+	width: 50%;
+}
+
+footer #otrasCasas img
+{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 1em 4%;
+	transition-duration: 0.3s;
+}
+
+footer #otrasCasas a
+{
+	display: inline-block;
+	width: 10%;
+	padding: 0 5%;
+}
+
+footer #legal
+{
+	width: 50%;
+	float: right;
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer #legal a
+{
+	flex-basis: 50%;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+footer #otrasCasas img:hover,
+footer #otrasCasas a:focus
+{
+	filter: brightness(1.3);
+}
+
+footer #legal a:hover,
+footer #legal a:focus
+{
+	color: #7a9dec;
+}
+
+/* _____________________________________________ Medias query _____________________________________________ */
+
+@media only screen and (max-width: 1200px)
+{
+	/* Página de historia */
+	
+	main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) p
+	{
+		width: 100%;
+	}
+
+	main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) div.imgHistoria + p,
+	main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) p + div.imgHistoria
+	{
+		margin-left: 0;
+		/* quitar el margen de 6% por la izquierda que se le puso antes (ahora da igual que esté uno antes o después porque están uno sobre otro) */;
+	}
+
+	main#historia #fondoOpacidad #contenido div:nth-of-type(2n-1) div.imgHistoria
+	{
+		width: 100%;
+	}
+	
+	/* Página de personajes */
+	
+	main#personajes > div#gen1
+	{
+		margin-left: 10%;
+	}
+
+	main#personajes > div#gen2
+	{
+		margin: 0;
+	}
+
+	main#personajes > div > button
+	{
+		width: 12%!important;
+		margin: 1em 1%!important;
+	}
+
+	main#personajes > aside > .contenidoPersonaje
+	{
+		width: 27%;
+		text-align: left;
+		font-size: 1.05em;
+	}
+	
+	/* Página de registro */
+	
+	main#inicio #frase
+	{
+		display: none;
+	}
+
+	main#registro #botonRegistro
+	{
+		margin: 0;
+	}
+
+	main#registro #checkbox
+	{
+		width: 65%;
+	}
+
+	footer #otrasCasas a
+	{
+		width: 20%;
+	}
+
+	main.legal > a
+	{
+		width: 9%;
+	}
+
+	main div.modalCookie
+	{
+		height: 12em;
+	}
+
+	main .contenidoModalCookie
+	{
+		height: 10em;
+	}
+
+	main .footerCookie button
+	{
+		width: 10%;
+	}
+
+	footer #legal
+	{
+		width: 60%;
+		padding-bottom: 1em;
+	}
+
+	footer #otrasCasas
+	{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	header:not(.legal)
+	{
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+	}
+
+	header > nav
+	{
+		height: 0;
+		flex-wrap: wrap;
+		font-size: 20px;
+	}
+
+	header > h3
+	{
+		font-size: 60px;
+	}
+
+	header > nav > a
+	{
+		flex-basis: 100%;
+		transition-duration: 0.4s;
+	}
+	
+	/* Página de historia */
+	
+	main#historia #fondoOpacidad #contenido p
+	{
+		text-align: left;
+		font-size: 1.2em;
+	}
+
+	main#historia #fondoOpacidad #contenido h2
+	{
+		font-size: 2.5em;
+	}
+	
+	/* Página de personajes */
+	
+	main#personajes > div
+	{
+		margin: 0!important;
+	}
+
+	main#personajes > div > button
+	{
+		width: 25%!important;
+	}
+
+	main#personajes > div > button > img + p
+	{
+		display: none;
+	}
+
+	main#personajes > aside > .contenidoPersonaje
+	{
+		width: 70%;
+	}
+
+	main#personajes > aside > .contenidoPersonaje > button
+	{
+		margin-top: 8em;
+		width: 50px;
+		height: 50px;
+		border-radius: 15px;
+	}
+	
+	/* Página de registro */
+	
+	main#registro input[type="text"]
+	{
+		width: 70%;
+		margin-bottom: 0;
+		transition-duration: 0.6s;
+	}
+
+	main#registro input[type="text"]:last-of-type
+	{
+		margin-bottom: 2em;
+	}
+
+	main#registro input[type="text"]:focus
+	{
+		width: 75%;
+		padding-left: 2%;
+	}
+
+	main#registro #checkbox
+	{
+		width: 95%;
+		display: block;
+		margin-top: 2em;
+		margin-left: 5%;
+	}
+
+	main#registro #botonregistro
+	{
+		margin: 1em 5%;
+	}
+
+	main#registro #modalPanel
+	{
+		padding: 5em 10%;
+	}
+
+	main#registro #modalPanel #contenidoModal
+	{
+		padding: 1em 2%;
+		width: 80%;
+	}
+
+	main#registro #modalPanel #contenidoModal button
+	{
+		right: 24.5%;
+	}
+
+	#botonMenu
+	{
+		display: inline-block;
+		position: fixed;
+		right: 0;
+	}
+
+	#botonMenu:focus,
+	#botonMenu:hover
+	{
+		filter: invert(30%);
+	}
+
+	header > nav > a:hover,
+	header > nav > a:focus
+	{
+		border-bottom: 0;
+		padding-bottom: 0.5em;
+		background-color: black;
+	}
+
+	main#inicio,
+	main#historia
+	{
+		background-image: url("src/img/fondoStarkMovil.jfif");
+	}
+
+	main.legal > a
+	{
+		width: 14%;
+	}
+
+	main div.modalCookie
+	{
+		height: 15em;
+	}
+
+	main .contenidoModalCookie
+	{
+		height: 13em;
+	}
+
+	main .footerCookie button
+	{
+		width: 35%;
+	}
+
+	footer #otrasCasas,
+	footer #legal
+	{
+		float: none;
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+
+	footer #legal
+	{
+		float: none;
+		display: block;
+	}
+
+	footer #legal a
+	{
+		display: block;
+	}
+}

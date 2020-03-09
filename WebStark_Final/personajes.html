@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Personajes</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta name="description" content="Personajes. En esta página encontramos una breve introducción de cada personaje de la Casa Stark."/>
+		<meta name="keywords" content="Stark ,Robb Stark, Sansa Stark, Eddard, Eddard Stark, Ned Stark, Jon nieve, Jon Snow, Bran Stark, Brandon Stark, Juego de Tronos, GoT, Invernalia, The winter is coming, Catelyn Tully, Catelyn Stark, Familia Stark, Arya Stark, Benjin Stark, Ben Stark, Rickon Stark"/>
+		<link rel="stylesheet" href="stark.css"/>
+		<link rel="icon" href="src/img/iconoPestania.png">
+		<script src="src/JavaScript/stark.js"></script>
+		<script src="src/JavaScript/procesosCookies.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="historia.html">HISTORIA</a>
+				<a href="personajes.html">PERSONAJES</a>
+				<a href="registro.html">REGISTRO</a>
+			</nav>
+			<button onclick="menu()" id="botonMenu"></button>
+		</header>
+		<main id="personajes">
+			<div id="gen1">
+				<button onclick="mostrarPersonaje('Catelyn')"><img src="src/img/Catelyn.jpg" title="Catelyn Tully" alt="Imagen de Catelyn Tully"><p>Catelyn Tully</p></button>
+				<button onclick="mostrarPersonaje('Eddard')"><img src="src/img/Eddard.jpg" title="Eddard Stark" alt="Imagen de Eddard Stark"><p>Eddard Stark</p></button>
+				<button onclick="mostrarPersonaje('Benjen')"><img src="src/img/Benjen.jpg" title="Benjen Stark" alt="Imagen de Benjen Stark"><p>Benjen Stark</p></button>
+			</div>
+			<div id="gen2">
+				<button onclick="mostrarPersonaje('Jon')"><img src="src/img/Jon.jpg" title="Jon Nieve" alt="Imagen de Jon Nieve"><p>Jon Nieve</p></button>
+				<button onclick="mostrarPersonaje('Robb')"><img src="src/img/Robb.jpg" title="Robb Stark" alt="Imagen de Robb Stark"><p>Robb Stark</p></button>
+				<button onclick="mostrarPersonaje('Sansa')"><img src="src/img/Sansa.jpg" title="Sansa Stark" alt="Imagen de Sansa Stark"><p>Sansa Stark</p></button>
+				<button onclick="mostrarPersonaje('Arya')"><img src="src/img/Arya.jpg" title="Arya Stark" alt="Imagen de Arya Stark"><p>Arya Stark</p></button>
+				<button onclick="mostrarPersonaje('Brandon')"><img src="src/img/Brandon.jpg" title="Brandon Stark" alt="Imagen de Brandon Stark"><p>Brandon Stark</p></button>
+				<button onclick="mostrarPersonaje('Rickon')"><img src="src/img/Rickon.jpg" title="Rickon Stark" alt="Imagen de Rickon Stark"><p>Rickon Stark</p></button>
+			</div>
+
+			<aside  class="personaje" id="Catelyn">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Catelyn.jpg" title="Catelyn Tully" alt="Imagen de Catelyn Tully"></div>
+					<h3>Catelyn Tully</h3>
+					<p>
+						Se casó con Ned Stark después de que el Rey Aerys, con quien Catelyn
+						estaba comprometida. Aunque ella y Ned apenas se conocían en el momento de
+						su boda, su amor se fortaleció con los años. Después de la muerte de Ned,
+						Catelyn intentó unir a su familia dispersa, pero fue asesinada junto su hijo Robb
+						en los Mellizos.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Eddard">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Eddard.jpg" title="Eddard Stark" alt="Imagen de Eddard Stark"></div>
+					<h3>Lord Eddard Stark</h3>
+					<p>
+						Apodado Ned, fue cabeza de la Casa Stark, y como tal, Señor
+						de Invernalia y Guardián del Norte. Durante la Guerra del Usupador se casó con
+						Lady Catelyn Tully, con quien tuvo cinco hijos, Robb, Sansa, Arya, Brandon y
+						Rickon. Tuvo, además, un hijo bastardo, Jon Nieve.
+					</p>
+				</div>
+			</aside>
+
+			<aside class="personaje" id="Benjen">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Benjen.jpg" title="Benjen Stark" alt="Imagen de Benjen Stark"></div>
+					<h3>Benjen Stark</h3>
+					<p>
+						Apodado Ben, es el Hermano de Ned Stark. Es un hermano
+						juramentado de la Guardia de la Noche, donde se desempeña como Primer
+						Explorador, líder de los exploradores de la Guardia. Nunca regresó de una de las
+						exploraciones.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Jon">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Jon.jpg" title="Jon Nieve" alt="Imagen de Jon Nieve"></div>
+					<h3>Lord Jon Nieve</h3>
+					<p>
+						Es el Lord Comandante de la Guardia de la Noche nº 998. Es hijo
+						bastardo de Lord Eddard Stark. Su lobo huargo, Fantasma, es albino y mudo. El
+						emblema personal de Jon consiste en los colores de la Casa Stark invertidos, un
+						lobo huargo de plata corriendo sobre fondo de cenizo.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Robb">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Robb.jpg" title="Robb Stark" alt="Imagen de Robb Stark"></div>
+					<h3>El rey Robb Stark</h3>
+					<p>
+						Fue el hijo primogénito de Lord Eddard Stark y Lady Catelyn
+						Tully, siendo desde su nacimiento el heredero de Invernalia y el Norte. Tiene dos
+						hermanas, Sansa y Arya; dos hermanos, Brandon y Rickon, y un medio-hermano
+						bastardo, Jon Nieve. Era frecuentemente acompañado por su lobo huargo Viento
+						Gris, quien siempre le acompañaba en la batalla.Su emblema personal como Rey
+						en el Norte fue una cabeza de lobo huargo grisácea sobre campo de plata.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Sansa">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Sansa.jpg" title="Sansa Stark" alt="Imagen de Sansa Stark"></div>
+					<h3>Sansa Stark</h3>
+					<p>
+						Es la hija mayor de Lord Eddard Stark y Lady Catelyn Tully. Tiene
+						tres hermanos, Robb, Brandon y Rickon; una hermana, Arya, y un medio hermano
+						bastardo, Jon Nieve. Está casada con Tyrion Lannister.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Arya">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Arya.jpg" title="Arya Stark" alt="Imagen de Arya Stark"></div>
+					<h3>Arya Stark</h3>
+					<p>
+						Es la segunda hija de Lord Eddard Stark y Lady Catelyn Tully. Tiene
+						una hermana, Sansa; tres hermanos, Robb, Brandon y Rickon, y un medio-
+						hermano bastardo, Jon Nieve, al que aprecia mucho. Como algunos de sus
+						hermanos, ella es una cambiapieles, pudiendo entrar en la piel de su loba huargo,
+						Nymeria.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Brandon">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Brandon.jpg" title="Brandon Stark" alt="Imagen de Brandon Stark"></div>
+					<h3>Brandon Stark</h3>
+					<p>
+						Mejor conocido como Bran, es el segundo hijo y heredero de Lord
+						Eddard Stark y Lady Catelyn Tully. Tiene dos hermanas, Sansa y Arya; dos
+						hermanos, Robb y Rickon, y un medio-hermano bastardo, Jon Nieve. Debido a
+						una caída, queda paralítico y depende de Hodor, un mozo de cuadra retrasado,
+						para desplazarse. Está siempre acompañado de su lobo huargo Verano, con
+						quien mantiene una poderosa conexión warg.
+					</p>
+				</div>
+			</aside>
+
+			<aside  class="personaje" id="Rickon">
+				<div class="contenidoPersonaje">
+					<button onclick="cerrarPersonaje()">X</button>
+					<div class="imgPersonaje"><img src="src/img/Rickon.jpg" title="Rickon Stark" alt="Imagen de Rickon Stark"></div>
+					<h3>Rickon Stark</h3>
+					<p>
+						Es el hijo menor de Lord Eddard Stark y Lady Catelyn Tully. Tiene
+						dos hermanos, Robb y Brandon; dos hermanas, Sansa y Arya, y un medio-
+						hermano bastardo, Jon Nieve. Normalmente es acompañado por su lobo huargo,
+						Peludo.
+					</p>
+				</div>
+			</aside>
+			
+			<div class="modalCookie" id="modalCookie">
+				<div class="contenidoModalCookie">
+					<div class="bodyCookie">
+						Esta web utiliza 'cookies' propias y de terceros para ofrecerle una mejor experiencia y servicio y 
+						poder registrar el proceso de compra. Para saber más sobre nuestra política de cookies o qué 
+						cookies utilizamos, puedes revisar la página de <a href="src/Legal/cookies.html">política de cookies</a>
+					</div>
+					<div class="footerCookie">
+						<button id="aceptarCookie">Aceptar</button>
+						<button id="cerrarCookie">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="otrasCasas">
+				<a href="http://2daw.esvirgua.com/14/final" title="http://2daw.esvirgua.com/14/final"><img src="src/img/lannister.png" alt="Escudo de la casa Lannister"/></a><!--URL casa lannister-->
+				<a href="http://2daw.esvirgua.com/09/final" title="http://2daw.esvirgua.com/09/final"><img src="src/img/targaryen.png" alt="Escudo de la casa Targaryen"/></a><!--URL casa targarian-->
+			</div>
+			<div id="legal">
+				<a href="src/Legal/avisoLegal.html">Aviso Legal</a>
+				<a href="src/Legal/privacidad.html">Política de privacidad</a>
+				<a href="src/Legal/cookies.html">Política de cookies</a>
+				<a href="src/Legal/terminos.html">Términos y condiciones</a>
+			</div>
+		</footer>
+	</body>
+</html>

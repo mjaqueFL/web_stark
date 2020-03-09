@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Stark</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta name="description" content="Página de inicio de casa Stark. En esta página encontraremos los enlaces para acceder tanto a la Historia y Personajes de la casa como a la página de registro"/>
+		<meta name="keywords" content="Stark, Casa Stark, Invernalia, Muro de hielo, The winter is coming, Winter is coming, GoT, Juego de tronos, Game of Thrones"/>
+		<link rel="stylesheet" href="stark.css"/>
+		<link rel="icon" href="src/img/iconoPestania.png">
+		<script src="src/JavaScript/stark.js"></script>
+		<script src="src/JavaScript/procesosCookies.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="historia.html">HISTORIA</a>
+				<a href="personajes.html">PERSONAJES</a>
+				<a href="registro.html">REGISTRO</a>
+			</nav>
+			<button onclick="menu()" id="botonMenu"></button>
+		</header>
+		<main id="inicio">
+			<div id="frase">
+				<h3>
+					Cuando cae la nieve y los vientos blancos soplan, el lobo solitario muere pero la
+					manada sobrevive.
+				</h3>
+				<h4>Sansa Stark</h4>
+				
+				<h3>
+					Los hijos son otro tipo de batalla, sin estandartes ni cuernos de guerra, pero no
+					menos violenta.
+				</h3>
+				<h4>Catelyn Stark</h4>
+				
+				<h3>Deja a un solo lobo vivo y las ovejas jamas estaran seguras.</h3>
+				<h4>Arya Stark</h4>
+			</div>
+			<div class="modalCookie" id="modalCookie">
+				<div class="contenidoModalCookie">
+					<div class="bodyCookie">
+						Esta web utiliza 'cookies' propias y de terceros para ofrecerle una mejor experiencia y servicio y 
+						poder registrar el proceso de compra. Para saber más sobre nuestra política de cookies o qué 
+						cookies utilizamos, puedes revisar la página de <a href="src/Legal/cookies.html">política de cookies</a>
+					</div>
+					<div class="footerCookie">
+						<button id="aceptarCookie">Aceptar</button>
+						<button id="cerrarCookie">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div id="otrasCasas">
+				<a href="http://2daw.esvirgua.com/14/final" title="http://2daw.esvirgua.com/14/final"><img src="src/img/lannister.png" alt="Escudo de la casa Lannister"/></a><!--URL casa lannister-->
+				<a href="http://2daw.esvirgua.com/09/final" title="http://2daw.esvirgua.com/09/final"><img src="src/img/targaryen.png" alt="Escudo de la casa Targaryen"/></a><!--URL casa targarian-->
+			</div>
+			<div id="legal">
+				<a href="src/Legal/avisoLegal.html">Aviso Legal</a>
+				<a href="src/Legal/privacidad.html">Política de privacidad</a>
+				<a href="src/Legal/cookies.html">Política de cookies</a>
+				<a href="src/Legal/terminos.html">Términos y condiciones</a>
+			</div>
+		</footer>
+	</body>
+</html>
